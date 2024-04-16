@@ -1,0 +1,21 @@
+	[{
+	"name":"Tom Durden",
+	"speciality":"Senior Developer",
+	"desc":"John transformed my business website into something that was both visually stunning and very functional. I was so impressed, I returned for a complete re-branding project ",
+	"img":"assets/man1.png",
+	"imgRed":"assets/twitter.png"
+},
+{
+    "name":"Alex Kalinski",
+	"speciality":"Co-Founder of DELKA",
+	"desc":"The website when completed completely surpassed all my expectations and I am totally thrilled. Any tweaks and edits that were needed were minimal and done quickly.",
+	"img":"assets/man2.jpg",
+	"imgRed":"assets/youtube.png"  
+},
+{
+    "name":"Martin Haarold",
+	"speciality":"CEO of ALBI",
+	"desc":"John has recently helped me to customize my website and I found him to be absolutely superb. He was able to translate exactly what I wanted into my website",
+	"img":"assets/man.png",
+	"imgRed":"assets/linkedin.png"
+}]

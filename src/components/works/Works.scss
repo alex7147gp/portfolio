@@ -1,0 +1,158 @@
+ @import '../../Global.scss';
+
+
+.works{
+	
+    width: 100%;
+    height: 100vh;
+	background-color: crimson;
+	border-radius: 20px;
+	align-items: center;
+	display: flex;
+    
+  
+    .arrowLeft{
+
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		position: absolute;
+    		z-index: 2;
+    		left: calc(0px + 10px);
+            transform: rotate(185deg);
+            cursor: pointer;
+            background-color: crimson;
+            @include mobile{
+              border-radius: 50px;
+              background-color: crimson;
+            }
+
+            img{
+                width: 50px;
+                height: 50px;
+                @include mobile{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    .arrowRight{
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		position: absolute;
+    		right: (0px + 10px);
+            cursor: pointer;
+            @include mobile{
+              border-radius: 50px;  
+              background-color: crimson;
+            } 
+
+            img{
+                width: 50px;
+                height: 50px;
+                @include mobile{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+  
+    .sliders{
+    	height: 350px; 	
+    	background-color: crimson;
+    	display: flex ;
+        overflow-y: hidden;
+        position: absolute;
+        transition: all 1s ease-out;
+
+    		 
+    	.container{
+
+            width: 100vw;
+            display: flex;
+    		align-items: center;
+    		justify-content: center;
+            overflow-y: hidden;
+    		border-radius: 20px;
+    		background-color: crimson;
+
+
+    		.items{
+    			width: 700px;
+    			height: 350px;
+                overflow-y: hidden;
+                display: flex;
+                padding-left: 20px;
+                align-items: center;
+                border-radius: 20px;
+                background-color: rgb(255, 266, 255);
+                @include mobile{
+                    width: 400px;
+                    height: 300px;
+                }
+    			
+    			.left{
+    			 display: flex;
+                 display: 1;
+                 flex-direction: column;
+                 width: 30%;
+
+                 .imgContainer{
+
+                 	width: 40px;
+                 	height: 40px;
+                 	border-radius: 50px;
+                 	background-color: coral;
+                 	display: flex ;
+                 	align-items: center;
+                 	justify-content: center;
+                 	margin-bottom: 15px;
+                 	
+                 	img{
+
+                      width: 40px; 
+                      height: 40px;
+
+                 	}
+                 }
+
+                 h3{
+                 	margin-bottom: 15px ;
+
+                 }
+                 span{
+                 	margin-bottom: 15px;
+                    @include mobile{
+                      display: none;
+                      
+                    }
+                 }
+    			}
+
+    			.right{
+
+    			 display: flex;
+                 display: 2;
+                 align-items: center;
+                 justify-content: center;  
+                 width: 70%;
+                 overflow-y: hidden;
+
+                 img{
+                 	width: 400px;
+                 	height: 500px;
+                 	transform: rotate(-10deg);
+                    @include mobile{
+                      width: 150px;
+                      height: 150px;
+                    }
+                 } 
+    			}
+
+    		}
+    	}
+
+    }
+
+}

@@ -1,0 +1,151 @@
+@import '../../Global.scss';
+
+
+.topbar{
+	
+	width: 100%;
+	height: 70px;
+    background-color: white;
+    color:$mainColor ; 
+	position: fixed;
+	top: 0;
+    z-index: 2;
+    transition: all 1s ease;
+
+   
+
+    .wraper{
+        	
+       	padding: 10px 30px ;
+       	display: flex;
+       	align-items: center;
+       	justify-content:  space-between;
+        
+        .left{
+        
+        	display: flex;
+        	align-items: center;
+        	justify-content:  center;
+        
+            .logo{
+                text-decoration: none;
+                font-size: 40px;
+       	        font-weight: 700;
+        	    margin-right: 25px;
+        	}
+        	     
+            .itemContainer{
+            	display: flex;
+       	        align-items: center;
+       	        margin-left: 25px;
+                @include mobile{
+                    display: none;
+                }
+
+        	    
+                .icon{
+                    font-size: 18px;
+                    margin-right: 5px;
+       	        }
+        
+       	        spam{
+      	          font-size: 15px;
+       	          font-weight : 500;
+       	        }
+       	    }
+        }
+        
+        .center{
+        }
+
+        .right{
+           
+             
+                display: flex;
+           
+                .salsa{
+                  width: 3px;
+                  height: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  cursor: pointer;
+                  margin-right: 3px;
+               
+                  spam{
+                    width: 100%;
+                    height: 3px;
+                    background-Color: $mainColor;
+                    
+                  }
+                }
+        	
+                .hamburger{
+                   width: 24px;
+                   height: 20px;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: space-between;
+                   cursor: pointer; 
+                   
+
+        	     
+                   spam{
+                     width: 100%;
+                     height: 3px;
+                     transform-origin: left;
+                     transition: all 2s ease;
+                     background-Color: $mainColor;
+
+                    
+
+                    }
+                }
+           
+        }
+        
+    }
+    
+    &.active{
+
+        background-color: $mainColor;
+        color: white;
+
+        .hamburger{
+           spam{
+             &:first-child{
+               background-color: white;
+               transform: rotate(45deg);
+             }
+             &:nth-child(2){
+              opacity: 0;
+             }
+             &:last-child{
+               background-color: white;
+               transform: rotate(-45deg);
+
+             }
+
+           }
+        }
+        .salsa{
+           spam{
+             &:first-child{
+              
+               transform: traslate(3px, 0px);
+             }
+             &:nth-child(2){
+              opacity: 0;
+             }
+             &:last-child{
+              
+               transform: traslate(3px, 0px);
+
+             }
+
+           }
+        }
+    }
+}
+
+

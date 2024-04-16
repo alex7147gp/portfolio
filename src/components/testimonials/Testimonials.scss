@@ -1,0 +1,184 @@
+ @import '../../Global.scss';
+
+
+
+.testimonials{
+
+	background-color: rgb(255, 255, 255);
+    .title{
+       
+       font-size: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       @include mobile{
+          font-size: 25px;
+       }
+    }
+    .container{
+    	background-color: rgb(255, 255, 255);
+    	width: 100%;
+    	height: 81vh;
+    	display: flex;
+   	align-items: center;
+   	justify-content: center;
+      @include mobile{
+         width: 100%;
+         height: 78vh;
+         flex-direction: column;
+         overflow-y: hidden;
+      }
+    	.items{
+    		background-color: rgb(255, 255, 255);
+    		width: 300px;
+    		height: 400px;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		flex-direction: column;
+    		border-radius: 10px;
+    		border: 1px solid lightgrey;
+    		margin: 10px;
+    		transition: all 0.5s ease;
+         @include mobile{
+            width: 350px;
+            height: 200px;
+            flex-wrap: wrap;
+         }
+    		
+    		.user{
+
+    			display: flex;
+    		    align-items: center;
+    		    justify-content: center;
+    		    margin-bottom: 10px;
+
+
+    			.containerArrow{
+    				width: 40px;
+    				height: 40px;
+    				background-color: rgb(255, 255, 255);
+    				border-radius: 50px;
+    				margin:10px ;
+    				overflow-y: hidden;
+               @include mobile{
+                  display: none;
+               }
+    				img{
+                   		width: 30px;
+    			      	height: 30px;
+    			      	display: flex;
+    		            align-items: center;
+    		            justify-content: center;
+    				}
+    			}
+    			.containerUser{
+    				width: 70px;
+    				height: 70px;
+    				background-color: rgb(255, 255, 255);
+    				border-radius: 50px;
+    				margin:10px ;
+    				overflow-y: hidden;
+               @include mobile{
+                  width: 40px;
+                  height: 40px;
+               }
+    				img{
+                   width: 70px;
+    				    height: 70px;
+    				    display: flex;
+    		          align-items: center;
+    		          justify-content: center;
+                   @include mobile{
+                     width: 40px;
+                     height: 40px;
+                   }
+    				}
+    			}
+    			.containerRed{
+    				width: 40px;
+    				height: 40px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+    				background-color: rgb(255, 255, 255);
+    				border-radius: 50px;
+    				margin:10px ;
+    				overflow-y: hidden;
+               @include mobile{
+                    display: none;
+                }
+    				img{
+                   width: 30px;
+    				    height: 30px;
+    			       display: flex;
+    		          align-items: center;
+    		          justify-content: center;
+    				}
+    			}
+    		}
+
+    		.desc{
+    			display: flex;
+    		    align-items: center;
+    		    justify-content: center;
+    		    margin-bottom: 10px;
+				overflow: hidden;
+
+                .containerDesc{
+                   width: 250;
+                   height: 100px;
+                   border-radius: 20px;                
+                   display: flex;
+    		          align-items: center;
+    		          justify-content: center;
+    		          margin: 10px;
+    		          background-color: rgb(255, 245, 255);
+					  overflow: hidden;  
+                   @include mobile{
+                     width: 250px;
+                     height: 80px;
+                     border-radius: 10px;
+                   }
+                   span{
+                      @include mobile{
+                        font-size: 15px;
+                      }
+                   
+                    }
+                }   
+    		}
+    		.client{
+                display: flex;
+      		    align-items: center;
+                justify-content: center;
+    	          margin: 10px;
+                @include mobile{
+                  display:none ;
+                }
+               .containerClient{
+               	.name{
+                    display: flex;
+    		        align-items: center;
+    	            justify-content: center;
+    	            margin: 5px;
+               	}
+               	.speciality{
+                    display: flex;
+    		        align-items: center;
+    	            justify-content: center;
+    	            margin: 5px;
+
+               	}
+               }
+    		}
+            &:hover{
+                
+            	box-shadow: 1px 1px 1px 1px;
+     	     	   transform: scale(1.1);
+         	}
+        }
+       
+    }
+
+}

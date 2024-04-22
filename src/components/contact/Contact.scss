@@ -2,9 +2,9 @@
 
 
 .contact{
-	
-	background-color: rgb(255, 255, 255);
-	border-radius: 20px;
+  
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
     .container{        
         width: 100%;
         height: 100%;
@@ -22,7 +22,7 @@
             width: 100%;
             height: 90%;  
           }
-       	  img{
+          img{
             width: 600px;
             height: 500px;
             @include mobile{
@@ -42,7 +42,7 @@
             @include mobile{
                 width: 200%;
             }
-        	
+          
           .title{
              margin-bottom: 20px;
              @include mobile{
@@ -51,11 +51,11 @@
           }
 
           form{
-          	display: flex;
-          	align-items: center;
-          	justify-content: center;
-          	flex-direction: column;
-        	.email{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          .email{
              width: 400px;
              height: 30px;
              margin-bottom: 20px;
@@ -63,29 +63,29 @@
                 width: 250px;
                 height: 25px;
              }
-        	}
+          }
 
-        	textarea{
-        	 width: 400px;
-        	 height: 250px;	
-        	 margin-bottom: 20px;
+          textarea{
+           width: 400px;
+           height: 250px; 
+           margin-bottom: 20px;
              @include mobile{
                 width: 250px;
                 height: 155px;
              }
              
-        	}
-        	span{
+          }
+          span{
               color: rgb(0, 255, 0);
               font-size: 20px;
-        	} 
-        	button{
-        		width: 80px;
-        		height: 30px;
-        		border-radius: 10px;
-        		background-color: crimson;
-        	}
-           }	
+          } 
+          button{
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: crimson;
+          }
+           }  
         }  
     }
 

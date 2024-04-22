@@ -13,11 +13,7 @@ const Topbar = ({menuOpen, setMenuOpen}) =>{
       <div className={'topbar ' + (menuOpen && 'active')}>
           <div className='wraper'>
             <div className='left'>
-              <a href="#contact" className='logo' style={{color:`${menuOpen === true ? 'white':'#171e40'}`}}>Center.com</a>            
-              <div className='itemContainer'>
-                <PersonIcon className='icon'/>
-                <spam>+0878292827</spam>
-              </div>
+              <a href="#contact" className='logo' style={{color:`${menuOpen === true ? 'white':'#171e40'}`}}>Portafolio</a>            
                <div className='itemContainer'>
                 <MailIcon className='icon'/>
                 <spam>johncedillo77@gmail.com</spam>

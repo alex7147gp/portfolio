@@ -1,6 +1,9 @@
 import React from 'react'
 import './Testimonials.scss'
-import comentarios from '../../util/testimonials.json';
+import { comentarios } from '../../util/testimonials.jsx';
+
+import rightArrow from "../../assets/right-arrow.png";
+
 
 
 const Testimonials = () => {
@@ -9,13 +12,13 @@ const Testimonials = () => {
 
 	return(
       <div className='testimonials' id='testimonials'>
-          <h1 className='title'>Testimonials</h1>
+          <h1 className='title'>Testimonios</h1>
           <div className='container'>
             {list.map(items=>
             <div className='items'>
               <div className='user'>
                 <div className='containerArrow'>
-                   <img src='assets/right-arrow.png' alt='' />
+                   <img src={rightArrow} alt='right arrow' />
                 </div>
                 <div className='containerUser'>
                    <img src={items.img} alt='' />

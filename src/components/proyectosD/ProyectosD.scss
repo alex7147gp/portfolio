@@ -1,0 +1,73 @@
+@import '../../Global.scss';
+
+/* Estilos para el contenedor de la sección */
+.section {
+  padding: 60px 0;
+  overflow-y: hidden;
+}
+
+/* Estilos para el título de la sección */
+.section-titlep {
+   font-size: 50px;
+       font-weight: 700;
+       font-size: 6rem;
+       display: flex;
+       margin-bottom: 30px;
+       @include mobile{
+          font-size: 25px;
+       }
+ 
+}
+
+/* Estilos para los proyectos destacados */
+.featured-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: calc(50% - 20px); /* Distribuye los proyectos en 2 columnas */
+  margin: auto;
+}
+
+/* Estilos para la imagen del proyecto */
+.project-image {
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+
+}
+
+/* Estilos para la información del proyecto */
+.project-info {
+  padding: 20px;
+  background-color: #f9f9f9; /* Color de fondo */
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Color del texto */
+}
+
+.project-description {
+  font-size: 18px;
+  color: #666; /* Color del texto */
+  margin-bottom: 20px;
+}
+
+/* Estilos para el botón "Ver Proyecto" */
+.btn-view-project {
+  display: inline-block;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-view-project:hover {
+  background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}

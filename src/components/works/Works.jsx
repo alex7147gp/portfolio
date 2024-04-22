@@ -3,7 +3,11 @@ import './Works.scss'
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import {useState} from 'react'
-import list from '../../util/proyect.json';
+import { list } from '../../util/proyect.jsx';
+
+import arrow from "../../assets/arrow.png";
+import mobile from "../../assets/mobile.png";
+
 
 const Works = () => {
 
@@ -30,7 +34,7 @@ const Works = () => {
 	return(
       <div className='works' id='works'>         
         <div className='arrowLeft' direction = 'left' onClick={()=>handeClick('left')}>
-          <img src='assets/arrow.png' alt=''/>
+          <img src={arrow} alt='arrow'/>
         </div>                                
         <div className='sliders' container={container} style={{transform : `translateX(${container  * -100}vw)`}}>
           {proyect.map(items=>
@@ -38,21 +42,21 @@ const Works = () => {
             <div className='items'>
               <div className='left'>
                  <div className='imgContainer'>
-                    <img src='assets/mobile.png'alt='' />
+                    <img src={mobile} alt='' />
                   </div>
                  <h3>{items.title}</h3>
                  <span>{items.desc}</span>
-                 <a href={items.link}>Proyects</a>
+                 <a href={items.link}  target="_blank" rel="noopener noreferrer">Ver Proyecto</a>
               </div>
               <div className='right' >
                 <img src={items.img} alt=''></img>
-              </div> 
+              </div>
             </div>
           </div>
           )}
         </div> 
         <div className='arrowRight' direction='rigth' onClick={()=>handeClick('right')}>
-           <img src='assets/arrow.png' alt=''/> 
+           <img src={arrow} alt='arrow'/> 
         </div>     
       </div>
     )

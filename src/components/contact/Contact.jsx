@@ -2,6 +2,10 @@ import React from 'react'
 import './Contact.scss'
 import {useRef, useState} from 'react'
 
+import shake from "../../assets/shake.svg";
+
+
+
 const Contact = () => {
   
    const EmailText = useRef() 
@@ -37,15 +41,15 @@ const Contact = () => {
 
    }
 
-	return(
+  return(
       <div className='contact' id='contact'>
           <div className='container'>
             <div className='left'>
-              <img src='assets/shake.svg' alt=''/>
+              <img src={shake} alt=''/>
             </div>
             <div className='right'>
               <h1 className='title'>
-                Contact
+                Contactame
               </h1>
              <form onSubmit={handeSubmit}>  
               <input className='email' placeholder='Email' ref={EmailText}></input>
